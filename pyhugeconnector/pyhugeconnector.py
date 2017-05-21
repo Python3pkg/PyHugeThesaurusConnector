@@ -94,6 +94,6 @@ if (__name__ == '__main__'):
 		ngram = int(sys.argv[4]) if len(sys.argv) > 4 else 1
 		rel_type = sys.argv[5] if len(sys.argv) > 5 else 'syn'
 
-		print(thesaurus_entry(word=word, api_key=api_key, pos_tag=pos_tag, ngram=ngram, relationship_type=rel_type))
+		print((thesaurus_entry(word=word, api_key=api_key, pos_tag=pos_tag, ngram=ngram, relationship_type=rel_type)))
 	else:
 		print('Not enough args, need to specify at least \'word\', \'api_key\' and \'pos_tag\'; i.e.: python pyhugeconnector.py love XXXAPIKEY666 noun')
